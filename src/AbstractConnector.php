@@ -268,7 +268,7 @@ abstract class AbstractConnector
             $parameters['_id'] = $id;
         } else {
             $parameters['index'] = $this->getIndexName($type);
-            $parameters['type'] = '_doc';
+            $parameters['type'] = $type;
             $parameters['id'] = $id;
         }
 
